@@ -1,0 +1,3 @@
+[submodule "flask-yeoman"]
+	path = flask-yeoman
+	url = git@github.com:minhoryang/flask-yeoman.git

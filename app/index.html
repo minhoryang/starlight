@@ -1,0 +1,35 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <!-- build:css styles/bootstrap.css -->
+        <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+	<!--<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.css">-->
+        <!-- endbuild -->
+        <!-- build:js scripts/vendor/modernizr.js -->
+        <script src="bower_components/modernizr/modernizr.js"></script>
+        <!-- endbuild -->
+    </head>
+    <body>
+        <div class="container"></div>
+        <!--[if lt IE 7]>
+            <p class="usechrome">You are using an <strong>outdated</strong> browser. Please <a href="http://www.google.com/chrome/?redirect=true">use Google Chrome</a> to improve your experience.</p>
+        <![endif]-->
+        <!-- build:js scripts/vendor.js -->
+        <script src="bower_components/jquery/dist/jquery.js"></script>
+        <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+        <!-- endbuild -->
+        {% if config.FLASK_YEOMAN_DEBUG %}
+            <!-- livereload script -->
+            <script>document.write('<script src="http://'
+                + (location.host || 'localhost').split(':')[0]
+                + ':{{ config.LIVERELOAD_PORT }}/livereload.js?snipver=1" type="text/javascript"><\/script>')
+            </script>
+        {% endif %}
+    </body>
+</html>

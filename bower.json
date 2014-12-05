@@ -1,0 +1,20 @@
+{
+  "name": "starlight",
+  "version": "0.0.1",
+  "description": "Github Stars Manager Lightly",
+  "authors": [
+    "Minho Ryang (minhoryang@gmail.com)"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "modernizr": "~2.8.3",
+    "bootstrap": "~3.3.1"
+  }
+}
